@@ -1,0 +1,21 @@
+<div>
+    <h2>Register</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="register.name" name="name" required>
+  
+      <label for="taxNumber">Tax Number:</label>
+      <input type="text" id="taxNumber" [(ngModel)]="register.taxNumber" name="taxNumber" required>
+  
+      <label for="mail">Mail:</label>
+      <input type="text" id="mail" [(ngModel)]="register.mail" name="mail" required>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" [(ngModel)]="register.phone" name="phone" required>
+
+      <label for="password">Password:</label>
+      <input type="text" id="password" [(ngModel)]="register.password" name="password" required>
+
+      <button type="submit">Register</button>
+    </form>
+</div>
